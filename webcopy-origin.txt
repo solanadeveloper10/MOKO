@@ -1,0 +1,320 @@
+Uri: https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\plutoprays.com\npm\bootstrap@5.3.3\dist\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\plutoprays.com\npm\bootstrap@5.3.3\dist\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js
+File Name: C:\Downloaded Web Sites\plutoprays.com\ajax\libs\fabric.js\5.2.4\fabric.min.js
+Content Type: application/javascript
+
+Uri: https://plutoprays.com/
+File Name: C:\Downloaded Web Sites\plutoprays.com\index.htm
+Content Type: text/html
+
+Uri: https://plutoprays.com/assets/css/style.css
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\css\style.css
+Content Type: text/css
+
+Uri: https://plutoprays.com/assets/font/heavyheap.otf
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\font\heavyheap.otf
+Content Type: application/x-font-woff
+
+Uri: https://plutoprays.com/assets/font/nanumpen.ttf
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\font\nanumpen.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://plutoprays.com/assets/img/asset_1.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\asset_1.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/asset_2.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\asset_2.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/asset_3.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\asset_3.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/button-swirl.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\button-swirl.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/cat-priest.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\cat-priest.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/colorsome.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\colorsome.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/confesions-place.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\confesions-place.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/copy.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\copy.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/definitive-stars.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\definitive-stars.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/dexscanner.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\dexscanner.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/dulo.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\dulo.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/dulotopia-bad.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\dulotopia-bad.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/dulotopia-good.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\dulotopia-good.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/eye-smoke.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\eye-smoke.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/eye.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\eye.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/favicon.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\favicon.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/feeling-dulo.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\feeling-dulo.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/feeling-dulo.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\feeling-dulo.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/header-desktop/altar.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\altar.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/header-desktop/altar.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\altar.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/header-desktop/coins.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\coins.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/header-desktop/coins.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\coins.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/header-desktop/header-background.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\header-background.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/header-desktop/header-sign.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\header-sign.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/header-desktop/header-sign.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\header-sign.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/header-desktop/pluto.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\pluto.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/header-desktop/pluto.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\pluto.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/header-desktop/smoke.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\smoke.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/header-desktop/smoke.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\header-desktop\smoke.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/hypno.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\hypno.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/mobile/m-altar.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-altar.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/mobile/m-altar.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-altar.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/mobile/m-coins.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-coins.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/mobile/m-coins.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-coins.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/mobile/m-header-sign.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-header-sign.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/mobile/m-header-sign.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-header-sign.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/mobile/m-header.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-header.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/mobile/m-pluto.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-pluto.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/mobile/m-pluto.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-pluto.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/mobile/m-smoke.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-smoke.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/mobile/m-smoke.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\m-smoke.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/mobile/mobile-dulotopia-bad.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\mobile-dulotopia-bad.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/mobile/mobile-dulotopia-good.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\mobile\mobile-dulotopia-good.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/pfp.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pfp.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pfp/1.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pfp\1.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pfp/2.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pfp\2.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pfp/3.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pfp\3.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pfp/4.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pfp\4.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pink-cloud.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pink-cloud.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/planet.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\planet.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pluto-book.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pluto-book.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pluto-book.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pluto-book.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/pluto-on-whale.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pluto-on-whale.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pluto-on-whale.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pluto-on-whale.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/portal.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\portal.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/portal2.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\portal2.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/pray.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\pray.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/shiba.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\shiba.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/swirl.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\swirl.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/tablet/altar.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\altar.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/tablet/altar.webp
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\altar.webp
+Content Type: image/webp
+
+Uri: https://plutoprays.com/assets/img/tablet/coins.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\coins.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/tablet/header.jpg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\header.jpg
+Content Type: image/jpeg
+
+Uri: https://plutoprays.com/assets/img/tablet/pluto.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\pluto.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/tablet/sign.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\sign.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/tablet/smoke.png
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\tablet\smoke.png
+Content Type: image/png
+
+Uri: https://plutoprays.com/assets/img/telegram.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\telegram.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/twitter.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\twitter.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/wallet-offcanvas.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\wallet-offcanvas.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/img/wallet.svg
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\img\wallet.svg
+Content Type: image/svg+xml
+
+Uri: https://plutoprays.com/assets/js/image-creator.js
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\js\image-creator.js
+Content Type: application/x-javascript
+
+Uri: https://plutoprays.com/assets/js/main.js
+File Name: C:\Downloaded Web Sites\plutoprays.com\assets\js\main.js
+Content Type: application/x-javascript
+
+Uri: https://plutoprays.com/dreamify
+File Name: C:\Downloaded Web Sites\plutoprays.com\dreamify.html
+Content Type: text/html
+

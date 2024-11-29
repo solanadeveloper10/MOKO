@@ -1,0 +1,475 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$PLUTO</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="description" content="">
+    <link href="npm/bootstrap%405.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid" id="header-container">
+        <div class="row h-100">
+            <div id="header-background"></div>
+            <div class="header-position">
+                <picture>
+                    <!-- Mobile -->
+                    <source media="(max-width: 500px)" type="image/webp" srcset="assets/img/mobile/m-altar.webp" class="img-fluid">
+                    <source media="(max-width: 500px)" type="image/png" srcset="assets/img/mobile/m-altar.png" class="img-fluid">
+                    <!-- Tablet -->
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/webp" srcset="assets/img/tablet/altar.webp" class="img-fluid">
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/png" srcset="assets/img/tablet/altar.png" class="img-fluid">
+                    <!-- Desktop -->
+                    <source type="image/webp" srcset="assets/img/header-desktop/altar.webp" class="img-fluid">
+                    <source type="image/png" srcset="assets/img/header-desktop/altar.png" class="img-fluid">
+                    <img src="assets/img/header-desktop/altar.png" alt="Altar" class="vw-100">
+                </picture>
+            </div>
+            <div class="header-position">
+                <picture>
+                    <!-- Mobile -->
+                    <source media="(max-width: 500px)" type="image/webp" srcset="assets/img/mobile/m-smoke.webp" class="img-fluid">
+                    <source media="(max-width: 500px)" type="image/png" srcset="assets/img/mobile/m-smoke.png" class="img-fluid">
+                    <!-- Tablet -->
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/png" srcset="assets/img/tablet/smoke.png" class="img-fluid">
+                    <!-- Desktop -->
+                    <source type="image/webp" srcset="assets/img/header-desktop/smoke.webp" class="img-fluid">
+                    <source type="image/png" srcset="assets/img/header-desktop/smoke.png" class="img-fluid">
+                    <img src="assets/img/header-desktop/smoke.png" alt="Smoke" class="vw-100">
+                </picture>
+            </div>
+            <div class="header-position">
+                <picture>
+                    <!-- Mobile -->
+                    <source media="(max-width: 500px)" type="image/webp" srcset="assets/img/mobile/m-coins.webp" class="img-fluid">
+                    <source media="(max-width: 500px)" type="image/png" srcset="assets/img/mobile/m-coins.png" class="img-fluid">
+                    <!-- Tablet -->
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/png" srcset="assets/img/tablet/coins.png" class="img-fluid">
+                    <!-- Desktop -->
+                    <source type="image/webp" srcset="assets/img/header-desktop/coins.webp" class="img-fluid">
+                    <source type="image/png" srcset="assets/img/header-desktop/coins.png" class="img-fluid">
+                    <img src="assets/img/header-desktop/coins.png" alt="Coins" class="vw-100">
+                </picture>
+            </div>
+            <div class="header-position">
+                <picture>
+                    <!-- Mobile -->
+                    <source media="(max-width: 500px)" type="image/webp" srcset="assets/img/mobile/m-header-sign.webp" class="img-fluid">
+                    <source media="(max-width: 500px)" type="image/png" srcset="assets/img/mobile/m-header-sign.png" class="img-fluid">
+                    <!-- Tablet -->
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/png" srcset="assets/img/tablet/sign.png" class="img-fluid">
+                    <!-- Desktop -->
+                    <source type="image/webp" srcset="assets/img/header-desktop/header-sign.webp" class="img-fluid">
+                    <source type="image/png" srcset="assets/img/header-desktop/header-sign.png" class="img-fluid">
+                    <img src="assets/img/header-desktop/header-sign.png" alt="Sign" class="vw-100">
+                </picture>
+            </div>
+            <div class="header-position">
+                <picture>
+                    <!-- Mobile -->
+                    <source media="(max-width: 500px)" type="image/webp" srcset="assets/img/mobile/m-pluto.webp" class="img-fluid">
+                    <source media="(max-width: 500px)" type="image/png" srcset="assets/img/mobile/m-pluto.png" class="img-fluid">
+                    <!-- Tablet -->
+                    <source media="(min-width: 500px) and (max-width: 1024px)" type="image/png" srcset="assets/img/tablet/pluto.png" class="img-fluid">
+                    <!-- Desktop -->
+                    <source type="image/webp" srcset="assets/img/header-desktop/pluto.webp" class="img-fluid">
+                    <source type="image/png" srcset="assets/img/header-desktop/pluto.png" class="img-fluid">
+                    <img src="assets/img/header-desktop/pluto.png" alt="Pluto" class="vw-100">
+                </picture>
+            </div>
+        </div>
+    </div>
+    <div id="off-canvas">
+        <div class="d-flex toggle-row">
+            <div class="col-auto ms-4 align-items-center">
+                <button class="walletLoginFunc"><span><img src="assets/img/wallet-offcanvas.svg" width="24px" class="me-3"></span>Wallet Login</button>
+            </div>
+            <div class="col-auto me-4 d-block d-lg-none toggle">
+                <a href="#" class="toggle-btn">
+                    <svg class="hamburger-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg>
+                    <svg class="close-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="col-9 col-md-6 mb-3">
+            <div class="ca">
+                <p class="text-break mb-0 pb-0">CA: <br>UEPp8H46WkPiBmi7nw35nyfFDNpxp9LWRPxSMHXpump</p>
+            </div>
+        </div>
+        <div class="col-11">
+            <a href="https://x.com/PlutoPrays" target="_blank">twitter</a>
+            <a href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn" target="_blank">dexscreener</a>
+            <a href="https://t.me/plutopurgatory" target="_blank">telegram</a>
+            <button class="nav-btn copyCA"><span class="copyCaInner">Copy CA</span></button>
+        </div>
+    </div>
+    <div class="container-fluid" id="navbar">
+        <div class="row h-100 justify-content-between align-items-center">
+            <div class="col-2 d-none d-lg-block">
+                <a href="index.htm">$Pluto</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <a href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn" target="_blank"><span><img src="assets/img/dexscanner.svg" alt="" width="24px" class="me-3"></span>Dexscreener</a>
+                <a href="https://x.com/PlutoPrays" target="_blank"><span><img src="assets/img/twitter.svg" alt="" width="24px" class="me-3"></span>Twitter</a>
+                <a href="https://t.me/plutopurgatory" target="_blank"><span><img src="assets/img/telegram.svg" alt="" width="24px" class="me-3"></span>Telegram</a>
+                <button class="copyCA"><img src="assets/img/copy.svg" alt="" width="24px" class="me-3"><span class="copyCaInner">Copy CA</span></button>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <button class="walletLoginFunc"><span><img src="assets/img/wallet.svg" alt="" width="24px" class="me-3"></span>Wallet Login</button>
+            </div>
+            <div class="toggle-row h-100 d-lg-none">
+                <div class="col-auto">
+                    <button style="color: var(--color)" class="walletLoginFunc"><img src="assets/img/wallet-offcanvas.svg" alt="" width="24px" class="me-3">Wallet Login</button>
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="toggle-btn">
+                        <svg class="hamburger-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg>
+                        <svg class="close-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wallet d-none" id="walletNotification">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <p>Comming Soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" style="padding-top: 80px;">
+        <div class="row flex-column align-items-center">
+            <div class="col-11 col-lg-9 col-xxl-7 mb-4">
+                <h1>Once, there was a trader named Pluto, cursed with weak hands.</h1>
+            </div>
+            <div class="col-11 col-lg-9 col-xxl-6">
+                <p>He fumbled every pump, panic-sold every dip, and lived in endless regret.</p>
+                <p>One fateful day, a stranger appeared, holding a glowing vial. Without explanation, he smirked and whispered, “Sip this. Stay Dulo, stay long.”
+                </p>
+                <p>Pluto obeyed, and with one big gulp, he found himself reborn. No longer plagued by doubt, he became the embodiment of belief, leading others to the promise of eternal pumps</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid dulotopiaPadding">
+        <div class="row justify-content-center align-items-center">
+            <div class="previewText">
+                Embrace Delusion
+            </div>
+            <div class="border-dulotopia">
+                <div id="dulotopia">
+                    <div class="mask"></div>
+                </div>
+            </div>
+            <div class="previewText">
+                Scroll over and see the truth
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 pt-4 text-center pb-100">
+        <div class="row justify-content-center">
+            <div class="col-auto" style="position: relative; z-index: 10;">
+                <h1>Choices...</h1>
+                <p>There are no wrong ones. But we suggest you try Dulo</p>
+            </div>
+        </div>
+        <div class="row px-4 justify-content-between">
+            <div class="col-12 col-lg-4">
+                <div class="tabs mobile-first">
+                    <div class="tab-img-container">
+                        <div class="tab-img-background"></div>
+                        <div class="img-glow"></div>
+                        <img src="assets/img/pray.png" alt="" class="">
+                    </div>
+                    <h1>CONFESS</h1>
+                    <p>
+                        Confess your sins and free your soul. <br>
+                        <span class="warning d-none" id="confessTabWarning">Drink DULO Juice FIrst!</span>
+                    </p>
+                    <div class="button-container">
+                        <button class="mybtn" id="confessTabButton">DO IT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pe-md-0 pe-lg-3">
+                <div class="tabs mobile-second">
+                    <div class="tab-img-container">
+                        <div class="tab-img-background"></div>
+                        <div class="img-glow"></div>
+                        <img src="assets/img/dulo.png" alt="" class="">
+                    </div>
+                    <h1>DULO</h1>
+                    <p>Drink my son. Grasp the power of Dulo.</p>
+                    <div class="button-container">
+                        <button class="mybtn" id="takeDulo">TAKE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 ps-md-0 ps-lg-2">
+                <div class="tabs mobile-third">
+                    <div class="tab-img-container">
+                        <div class="tab-img-background"></div>
+                        <div class="img-glow"></div>
+                        <img src="assets/img/pfp.png" alt="" class="">
+                    </div>
+                    <h1>PLUTO</h1>
+                    <p>
+                        Join the Church<br>of Delusion.
+                    </p>
+                    <div class="button-container">
+                        <a href="dreamify.html" class="mybtn text-decoration-none">MAKE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative" style="overflow-x: clip;">
+        <div class="row justify-content-center" id="movable-text">
+            <div class="col-11 col-md-6 col-lg-4 text-center">
+                <p>Have you tried the dulo juice? It's a unforgetable experience</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 col-lg-4 position-relative">
+                <div class="glow"></div>
+                <div class="priest"></div>
+            </div>
+            <div class="row justify-content-center position-relative">
+                <div class="smoke left-smoke"></div>
+                <div class="col-4 px-0">
+                    <div class="eye-container left-eye">
+                        <div class="eyelid-div"></div>
+                        <div class="swirl-div"></div>
+                    </div>
+                </div>
+                <div class="col-4 px-0">
+                    <div class="eye-container right-eye">
+                        <div class="eyelid-div"></div>
+                        <div class="swirl-div"></div>
+                    </div>
+                </div>
+                <div class="smoke right-smoke"></div>
+            </div>
+        </div>
+        <div class="door-background"></div>
+        <div class="door left-door"></div>
+        <div class="door right-door"></div>
+    </div>
+    <div class="container-fluid first-footer">
+        <div class="row justify-content-center" id="firstFooter">
+            <div class="col-auto text-center">
+                <small>Pluto 2025</small>
+            </div>
+        </div>
+    </div>
+    <section id="space-section" class="d-none">
+        <div class="container-fluid text-center position-relative" style="overflow-x: clip;">
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-6 first-space-text-padding">
+                    <h1 class="yellow">Abandon Reality. <br> Embrace Delusion.</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center justify-content-md-auto">
+                <div class="col-12 col-lg-4">
+                    <div class="row flex-column align-items-center">
+                        <div class="col-8 col-xl-9 col-xxl-8 big-padding">
+                            <div class="commandment">
+                                <h2>Delusion Fuels Fortune</h2>
+                                <p>Conviction turns dreams into generational wealth.</p>
+                            </div>
+                            <div class="commandment">
+                                <h2>Faith Over Fundamentals</h2>
+                                <p>Market cap is fiction; belief fuels pumps, logic kills them.</p>
+                            </div>
+                        </div>
+                        <div class="col-auto align-self-lg-end d-lg-none my-4 pt-3 pb-5 paraLeft" data-speed="1">
+                            <div class="cube">
+                                <div class="face top"></div>
+                                <div class="face bottom"></div>
+                                <div class="face left"></div>
+                                <div class="face right"></div>
+                                <div class="face front"></div>
+                                <div class="face back"></div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-xl-9 col-xxl-8">
+                            <div class="commandment">
+                                <h2>All Time Hope</h2>
+                                <p>Every ATH is a new beginning that leads to a greater ascent. Up only.</p>
+                            </div>
+                            <div class="commandment">
+                                <h2>Unrealized Gains Are the Best Gains</h2>
+                                <p>Selling forfeits the future. Hold, and rise higher.</p>
+                            </div>
+                        </div>
+                        <div class="col-auto align-self-end d-none d-lg-block paraRight" data-speed="0.4">
+                            <div class="cube">
+                                <div class="face top"></div>
+                                <div class="face bottom"></div>
+                                <div class="face left"></div>
+                                <div class="face right"></div>
+                                <div class="face front"></div>
+                                <div class="face back"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto hypnopadding">
+                            <div class="hypnoswirl second paraLeft" data-speed="2">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-xl-9 col-xxl-8">
+                            <div class="commandment">
+                                <h2>Greed Is Glory</h2>
+                                <p>Desire fuels the pump. Greed isn't a flaw, it's an edge.</p>
+                            </div>
+                            <div class="commandment pb-5 pb-lg-1">
+                                <h2>Doubt Weakens the Pump</h2>
+                                <p>Questioning the path only weakens the pump.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-8 col-lg-4 position-relative">
+                    <div class="portal-opening"></div>
+                    <div class="row flex-column align-items-center">
+                        <div class="col-10 position-relative">
+                            <div class="portal">
+                                <div class="over"></div>
+                                <div class="row flex-column align-items-center portal-thing">
+                                    <div class="col-12 portal-top">
+                                        <img src="assets/img/asset_1.png" alt="" class="img-fluid">
+                                        <img src="assets/img/asset_2.png" alt="" class="img-fluid">
+                                        <img src="assets/img/asset_3.png" alt="" class="img-fluid">
+                                        <img src="assets/img/pray.png" alt="" class="img-fluid">
+                                        <img src="assets/img/asset_1.png" alt="" class="img-fluid laptop">
+                                        <img src="assets/img/asset_2.png" alt="" class="img-fluid laptop">
+                                    </div>
+                                    <div class="col-12 portal-bottom">
+                                        <img src="assets/img/asset_1.png" alt="" class="img-fluid">
+                                        <img src="assets/img/asset_2.png" alt="" class="img-fluid">
+                                        <img src="assets/img/asset_3.png" alt="" class="img-fluid">
+                                        <img src="assets/img/pray.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portal-closing"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="row flex-column align-items-center">
+                        <div class="col-12">
+                            <img src="assets/img/pink-cloud.png" alt="" class="first-cloud paraRight" data-speed="2">
+                        </div>
+                        <div class="col-12 d-none d-lg-block">
+                            <div class="hypnoswirl paraLeft" data-speed="0.4">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-xl-9 col-xxl-8 pt-5 mt-5 mt-lg-1 pt-lg-1">
+                            <div class="commandment">
+                                <h2>Selling Is Sin</h2>
+                                <p>Profit taking is sacrilege.</p>
+                            </div>
+                            <div class="commandment">
+                                <h2>Rugs Are Tests</h2>
+                                <p>They don't exist. The unfaithful call them rugs. The devout call them opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <div class="hypnoswirl paraRight" data-speed="1.4">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="col-12 whale">
+                            <picture>
+                                <source type="image/webp" srcset="assets/img/pluto-on-whale.webp" class="paraRight" data-speed="0.6">
+                                <source type="image/png" srcset="assets/img/pluto-on-whale.png" class="paraRight" data-speed="0.6">
+                                <img src="assets/img/pluto-on-whale.png" class="paraRight" data-speed="0.6">
+                            </picture>
+                        </div>
+                        <div class="col-8 col-xl-9 col-xxl-8 pt-5">
+                            <div class="commandment">
+                                <h2>FOMO Is Holy</h2>
+                                <p>Hesitation is for non-believers. Leap, and the pump will catch you.</p>
+                            </div>
+                            <div class="commandment">
+                                <h2>Convert the Doubters</h2>
+                                <p>Non-believers are merely future disciples.</p>
+                            </div>
+                        </div>
+                        <div class="col-auto align-self-end">
+                            <img src="assets/img/planet.png" alt="" class="planet paraRight" data-speed="0.7">
+                        </div>
+                        <div class="col-auto align-self-start paraLeft" data-speed="0.4">
+                            <div class="cube ms-5 ms-lg-1">
+                                <div class="face purple top"></div>
+                                <div class="face purple bottom"></div>
+                                <div class="face purple left"></div>
+                                <div class="face purple right"></div>
+                                <div class="face purple front"></div>
+                                <div class="face purple back"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid position-relative" style="margin-top: 100px; overflow-x: clip;">
+            <img src="assets/img/pink-cloud.png" alt="" class="third-cloud paraRight" data-speed="1">
+            <img src="assets/img/pink-cloud.png" alt="" class="second-cloud d-none d-lg-block paraLeft" data-speed="1">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-9 col-xl-8 col-xxl-6 text-center position-relative">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/pluto-book.webp" alt="" class="plutoBook">
+                        <source type="image/png" srcset="assets/img/pluto-book.png" alt="" class="plutoBook">
+                        <img src="assets/img/pluto-book.png" alt="" class="plutoBook">
+                    </picture>
+                    <div id="confessions">
+                        <h2>Forgive me father, for I have sinned</h2>
+                        <p>Do not hide from the gaze of Dulo. We see your doubts, your slips, your sins - but fear not, for the path to redemption is always open.</p>
+                        <p>Share your confession below and offer your wallet address as a token of faith. In return, the blessings of the pump may be bestowed upon you.</p>
+                        <span class="warning d-none" id="confessFormWarning">Please Fill Out Your Confession.</span>
+                        <div class="confession-form">
+                            <div class="fessions mt-5">
+                                <textarea class="" cols="30" rows="3" placeholder="Type a confession..." id="confessionInput"></textarea>
+                                <input type="text" placeholder="(Optional) Paste your wallet adress" id="walletAddyInput">
+                            </div>
+                            <div class="button-container mt-5">
+                                <button class="mybtn" id="submitConfession">SUBMIT</button>
+                            </div>
+                        </div>
+                        <p style="color: #58a85b;" class="d-none" id="confessionSucc">✦ Success! ✦</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+        <div class="bg-img"></div>
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-11 col-md-8 col-lg-5 col-xxl-auto position-relative">
+                    <div class="light"></div>
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/feeling-dulo.webp" class="img-fluid sun">
+                        <source type="image/png" srcset="assets/img/feeling-dulo.png" class="img-fluid sun">
+                        <img src="assets/img/feeling-dulo.png" alt="" class="img-fluid sun">
+                    </picture>
+                    <img src="assets/img/shiba.png" alt="" class="img-fluid floating-pluto">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <small>Pluto 2025</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
