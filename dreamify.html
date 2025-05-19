@@ -1,383 +1,572 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>$PLUTO</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <meta name="description" content="">
-    <link href="npm/bootstrap%405.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <meta name="description" content="" />
+    <link
+      href="npm/bootstrap%405.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-        h1, h2, h3, p, a, button, small, span {
-            opacity: 1;
-            transform: rotateX(0deg);
-        }
+      h1,
+      h2,
+      h3,
+      p,
+      a,
+      button,
+      small,
+      span {
+        opacity: 1;
+        transform: rotateX(0deg);
+      }
 
-        h1 {
-            font-size: 3rem;
-            line-height: 3rem;
-        }
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
 
+      p {
+        font-size: 24px;
+      }
+
+      #navbar {
+        height: 70px;
+      }
+
+      .height {
+        height: 62vh;
+      }
+
+      .hypno-border {
+        width: 100%;
+        height: 100%;
+        border-radius: 155px;
+        background-image: url("assets/img/hypno.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hypno-border.canvas {
+        width: 830px;
+        height: 630px;
+        padding: 12px;
+      }
+
+      .input-btn-container {
+        background-color: var(--mainBlack);
+        width: 100%;
+        height: 96%;
+        border-radius: 150px;
+        margin: 12px;
+      }
+
+      #imageUpload {
+        display: none;
+      }
+
+      .upload-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        letter-spacing: 2px;
+        font-size: 28px;
+        background-color: #0000;
+        border-radius: 140px;
+        color: var(--color);
+        transition: 0.3s all;
+        padding: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      .upload-btn:hover {
+        background-color: #3b315a;
+      }
+
+      .canvas-containe {
+        background-color: var(--mainBlack);
+        width: 100%;
+        height: 100%;
+        border-radius: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 20px;
+      }
+
+      #overlays {
+        border: 1px solid #5e4e8f;
+        border-bottom: 0;
+        background-color: var(--mainBlack);
+        padding: 15px 25px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .overlay-thumb {
+        width: 120px;
+        cursor: pointer;
+        padding: 0 10px;
+        border-left: 1px solid #352f3f;
+      }
+
+      .overlay-thumb:first-child {
+        border: none;
+      }
+
+      .canvas-btn {
+        width: 100%;
+        border: 1px solid #5e4e8f;
+        border-radius: 25px 8px;
+        background-color: #3b315a;
+        color: var(--color);
+        outline: none;
+        font-size: 26px;
+        padding: 10px 0;
+        transition: 0.2s all;
+      }
+
+      .canvas-btn:hover {
+        -webkit-box-shadow: 0px 0px 60px 1px #8467ab87;
+        -moz-box-shadow: 0px 0px 60px 1px #8467ab87;
+        box-shadow: 0px 0px 60px 1px #8467ab87;
+      }
+
+      .svg-wh {
+        width: 28px;
+        height: 28px;
+      }
+
+      @media (min-width: 600px) and (max-width: 1024px) {
         p {
-            font-size: 24px;
-        }
-
-        #navbar {
-            height: 70px;
-        }
-
-        .height {
-            height: 62vh;
+          font-size: 26px;
         }
 
         .hypno-border {
-            width: 100%;
-            height: 100%;
-            border-radius: 155px;
-            background-image: url('assets/img/hypno.jpg');
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hypno-border.canvas {
-            width: 830px; 
-            height: 630px;
-            padding: 12px;
+          border-radius: 90px;
         }
 
         .input-btn-container {
-            background-color: var(--mainBlack);
-            width: 100%;
-            height: 96%;
-            border-radius: 150px;
-            margin: 12px;
-        }
-
-        #imageUpload {
-            display: none;
+          border-radius: 85px;
         }
 
         .upload-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            letter-spacing: 2px;
-            font-size: 28px;
-            background-color: #0000;   
-            border-radius: 140px;      
-            color: var(--color);       
-            transition: 0.3s all;
-            padding: 10px;            
-            box-sizing: border-box;
-            cursor: pointer;
+          font-size: 26px;
+          border-radius: 85px;
         }
 
-        .upload-btn:hover {
-            background-color: #3B315A;
+        .hypno-border.canvas {
+          width: 680px;
+          height: 600px;
         }
 
         .canvas-containe {
-            background-color: var(--mainBlack);
-            width: 100%;
-            height: 100%;
-            border-radius: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+          border-radius: 85px;
         }
 
-        canvas { 
-            width: 100% !important; 
-            height: 100% !important; 
-            border-radius: 20px;
+        .overlay-thumb {
+          width: 90px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2.7rem;
+          line-height: 2.7rem;
         }
 
-        #overlays {
-            border: 1px solid #5E4E8F;
-            border-bottom: 0;
-            background-color: var(--mainBlack);
-            padding: 15px 25px;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
+        .height {
+          height: 40vh;
         }
 
-        .overlay-thumb { 
-            width: 120px; 
-            cursor: pointer; 
-            padding: 0 10px;
-            border-left: 1px solid #352f3f;
+        .hypno-border {
+          border-radius: 60px;
         }
 
-        .overlay-thumb:first-child {
-            border: none;
+        .input-btn-container {
+          border-radius: 55px;
+        }
+
+        .upload-btn {
+          font-size: 24px;
+          border-radius: 55px;
+        }
+
+        .hypno-border.canvas {
+          width: 390px;
+          height: 470px;
+          padding: 8px;
+        }
+
+        .canvas-containe {
+          border-radius: 60px;
+        }
+
+        canvas {
+          border-radius: 10px;
         }
 
         .canvas-btn {
-            width: 100%;
-            border: 1px solid #5E4E8F;
-            border-radius: 25px 8px;
-            background-color: #3B315A;
-            color: var(--color);
-            outline: none;
-            font-size: 26px;
-            padding: 10px 0;
-            transition: 0.2s all;
+          border-radius: 25px 8px;
+          font-size: 18px;
+          height: 100%;
+          padding: 10px 5px;
         }
 
-        .canvas-btn:hover {
-            -webkit-box-shadow: 0px 0px 60px 1px #8467ab87;
-            -moz-box-shadow: 0px 0px 60px 1px #8467ab87;
-            box-shadow: 0px 0px 60px 1px #8467ab87;
+        #overlays {
+          padding: 8px 15px;
+          border-radius: 30px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #5e4e8f;
+        }
+
+        .overlay-thumb {
+          width: 70px;
         }
 
         .svg-wh {
-            width: 28px;
-            height: 28px;
+          width: 20px;
+          height: 20px;
         }
+      }
 
-        @media (min-width: 600px) and (max-width: 1024px) {
-            p {
-                font-size: 26px;
-            }
-
-            .hypno-border {
-                border-radius: 90px;
-            }
-
-            .input-btn-container {
-                border-radius: 85px;
-            }
-
-            .upload-btn {
-                font-size: 26px;
-                border-radius: 85px;      
-            }
-
-            .hypno-border.canvas {
-                width: 680px; 
-                height: 600px; 
-            }
-
-            .canvas-containe {
-                border-radius: 85px;
-            }
-
-            .overlay-thumb { 
-                width: 90px; 
-            }
+      @media (max-width: 380px) {
+        .hypno-border.canvas {
+          width: 350px;
         }
-        
-        @media (max-width: 500px) {
-            h1 {
-                font-size: 2.7rem;
-                line-height: 2.7rem;
-            }
+      }
 
-            .height {
-                height: 40vh;
-            }
-
-            .hypno-border {
-                border-radius: 60px;
-            }
-
-            .input-btn-container {
-                border-radius: 55px;
-            }
-
-            .upload-btn {
-                font-size: 24px;
-                border-radius: 55px;      
-            }
-
-            .hypno-border.canvas {
-                width: 390px; 
-                height: 470px; 
-                padding: 8px;
-            }
-
-            .canvas-containe {
-                border-radius: 60px;
-            }
-
-            canvas { 
-                border-radius: 10px;
-            }
-
-            .canvas-btn {
-                border-radius: 25px 8px;
-                font-size: 18px;
-                height: 100%;
-                padding: 10px 5px;
-            }
-
-            #overlays {
-                padding: 8px 15px;
-                border-radius: 30px;
-                margin-bottom: 10px;
-                border-bottom: 1px solid #5E4E8F
-            }
-
-            .overlay-thumb { 
-                width: 70px; 
-            }
-
-            .svg-wh {
-                width: 20px;
-                height: 20px;
-            }
+      @media (max-width: 320px) {
+        .hypno-border.canvas {
+          width: 300px;
+          height: 400px;
         }
-
-        @media (max-width: 380px) {
-            .hypno-border.canvas {
-                width: 350px; 
-            }
-        }
-
-        @media (max-width: 320px) {
-            .hypno-border.canvas {
-                width: 300px; 
-                height: 400px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-<div id="off-canvas">
-        <div class="d-flex toggle-row">
-            <div class="col-auto ms-4 align-items-center">
-                <button class="walletLoginFunc"><span><img src="assets/img/wallet-offcanvas.svg" width="24px" class="me-3"></span>Wallet Login</button>
-            </div>
-            <div class="col-auto me-4 d-block d-lg-none toggle">
-                <a href="#" class="toggle-btn">
-                    <svg class="hamburger-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg>
-                    <svg class="close-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"></path></svg>
-                </a>
-            </div>
+  </head>
+  <body>
+    <div id="off-canvas">
+      <div class="d-flex toggle-row">
+        <div class="col-auto ms-4 align-items-center">
+          <button class="walletLoginFunc">
+            <span
+              ><img
+                src="assets/img/wallet-offcanvas.svg"
+                width="24px"
+                class="me-3" /></span
+            >Wallet Login
+          </button>
         </div>
-        <div class="col-9 col-md-6 mb-3">
-            <div class="ca">
-                <p class="text-break mb-0 pb-0">CA: <br>UEPp8H46WkPiBmi7nw35nyfFDNpxp9LWRPxSMHXpump</p>
-            </div>
+        <div class="col-auto me-4 d-block d-lg-none toggle">
+          <a href="#" class="toggle-btn">
+            <svg
+              class="hamburger-icon"
+              width="26px"
+              height="26px"
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z"
+                fill-rule="nonzero"
+              ></path>
+            </svg>
+            <svg
+              class="close-icon"
+              width="26px"
+              height="26px"
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+              ></path>
+            </svg>
+          </a>
         </div>
-        <div class="col-11">
-            <a href="index.htm">Home</a>
-            <a href="https://x.com/PlutoPrays" target="_blank">twitter</a>
-            <a href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn" target="_blank">dexscreener</a>
-            <a href="https://t.me/plutopurgatory" target="_blank">telegram</a>
+      </div>
+      <div class="col-9 col-md-6 mb-3">
+        <div class="ca">
+          <p class="text-break mb-0 pb-0">
+            CA: <br />UEPp8H46WkPiBmi7nw35nyfFDNpxp9LWRPxSMHXpump
+          </p>
         </div>
+      </div>
+      <div class="col-11">
+        <a href="index.htm">Home</a>
+        <a href="https://x.com/PlutoPrays" target="_blank">twitter</a>
+        <a
+          href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn"
+          target="_blank"
+          >dexscreener</a
+        >
+        <a href="https://t.me/plutopurgatory" target="_blank">telegram</a>
+      </div>
     </div>
     <div class="container-fluid" id="navbar">
-        <div class="row h-100 justify-content-between align-items-center">
-            <div class="col-2 d-none d-lg-block">
-                <a href="index.htm">$Pluto</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <a href="index.htm">Home</a>
-                <a href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn" target="_blank"><span><img src="assets/img/dexscanner.svg" alt="" width="24px" class="me-3"></span>Dexscreener</a>
-                <a href="https://x.com/PlutoPrays" target="_blank"><span><img src="assets/img/twitter.svg" alt="" width="24px" class="me-3"></span>Twitter</a>
-                <a href="https://t.me/plutopurgatory" target="_blank"><span><img src="assets/img/telegram.svg" alt="" width="24px" class="me-3"></span>Telegram</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                <button class="walletLoginFunc"><span><img src="assets/img/wallet.svg" alt="" width="24px" class="me-3"></span>Wallet Login</button>
-            </div>
-            <div class="toggle-row h-100 d-lg-none">
-                <div class="col-auto">
-                    <button style="color: var(--color)" class="walletLoginFunc"><img src="assets/img/wallet-offcanvas.svg" alt="" width="24px" class="me-3">Wallet Login</button>
-                </div>
-                <div class="col-auto">
-                    <a href="#" class="toggle-btn">
-                        <svg class="hamburger-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"></path></svg>
-                        <svg class="close-icon" width="26px" height="26px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"></path></svg>
-                    </a>
-                </div>
-            </div>
+      <div class="row h-100 justify-content-between align-items-center">
+        <div class="col-2 d-none d-lg-block">
+          <a href="index.htm">$Pluto</a>
         </div>
-        <div class="wallet d-none" id="walletNotification">
-            <div class="row justify-content-center">
-                <div class="col-auto text-center">
-                    <p>Comming Soon!</p>
-                </div>
-            </div>
+        <div class="col-auto d-none d-lg-block">
+          <a href="index.htm">Home</a>
+          <a
+            href="https://dexscreener.com/solana/9o8uslbsn8jmf8eg91uoy1nniz6oyxnqg8r6rk7lfzdn"
+            target="_blank"
+            ><span
+              ><img
+                src="assets/img/dexscanner.svg"
+                alt=""
+                width="24px"
+                class="me-3" /></span
+            >Dexscreener</a
+          >
+          <a href="https://x.com/PlutoPrays" target="_blank"
+            ><span
+              ><img
+                src="assets/img/twitter.svg"
+                alt=""
+                width="24px"
+                class="me-3" /></span
+            >Twitter</a
+          >
+          <a href="https://t.me/plutopurgatory" target="_blank"
+            ><span
+              ><img
+                src="assets/img/telegram.svg"
+                alt=""
+                width="24px"
+                class="me-3" /></span
+            >Telegram</a
+          >
         </div>
+        <div class="col-auto d-none d-lg-block">
+          <button class="walletLoginFunc">
+            <span
+              ><img
+                src="assets/img/wallet.svg"
+                alt=""
+                width="24px"
+                class="me-3" /></span
+            >Wallet Login
+          </button>
+        </div>
+        <div class="toggle-row h-100 d-lg-none">
+          <div class="col-auto">
+            <button style="color: var(--color)" class="walletLoginFunc">
+              <img
+                src="assets/img/wallet-offcanvas.svg"
+                alt=""
+                width="24px"
+                class="me-3"
+              />Wallet Login
+            </button>
+          </div>
+          <div class="col-auto">
+            <a href="#" class="toggle-btn">
+              <svg
+                class="hamburger-icon"
+                width="26px"
+                height="26px"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+              <svg
+                class="close-icon"
+                width="26px"
+                height="26px"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="wallet d-none" id="walletNotification">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <p>Comming Soon!</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container-fluid mt-5" id="uploadImageContainer">
-        <div class="row justify-content-center text-center">
-            <div class="col-auto">
-                <h1>Make Your PFP Delusional</h1>
-                <p>Abandon everything, Embrace delusion.</p>
-            </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-auto">
+          <h1>Make Your PFP Delusional</h1>
+          <p>Abandon everything, Embrace delusion.</p>
         </div>
-        <div class="row justify-content-center align-items-center height">
-            <div class="col-10 col-lg-6 h-100">
-                <div class="hypno-border">
-                    <div class="input-btn-container">
-                        <input type="file" id="imageUpload" accept="image/*">
-                        <label for="imageUpload" class="upload-btn">Click to upload!</label>
-                    </div>
-                </div>
+      </div>
+      <div class="row justify-content-center align-items-center height">
+        <div class="col-10 col-lg-6 h-100">
+          <div class="hypno-border">
+            <div class="input-btn-container">
+              <input type="file" id="imageUpload" accept="image/*" />
+              <label for="imageUpload" class="upload-btn"
+                >Click to upload!</label
+              >
             </div>
+          </div>
         </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-auto text-center">
-                <p>Upload your image and let's get started!</p>
-            </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-auto text-center">
+          <p>Upload your image and let's get started!</p>
         </div>
+      </div>
     </div>
     <div class="container-fluid py-5 d-none" id="editImageContainer">
-        <div class="row">
-            <div class="col-12 text-center">
-                <p>Pick some glasses and rock on</p>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>Pick some glasses and rock on</p>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <div id="overlays">
-                    <img src="assets/img/pfp/1.png" class="overlay-thumb" alt="Goggles" data-type="goggles">
-                    <img src="assets/img/pfp/2.png" class="overlay-thumb" alt="Goggles" data-type="goggles">
-                    <img src="assets/img/pfp/3.png" class="overlay-thumb" alt="Goggles" data-type="goggles">
-                    <img src="assets/img/pfp/4.png" class="overlay-thumb" alt="Goggles" data-type="goggles">
-                    <!-- Add more overlays as needed -->
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div id="overlays">
+            <img
+              src="assets/img/pfp/1.png"
+              class="overlay-thumb"
+              alt="Goggles"
+              data-type="goggles"
+            />
+            <img
+              src="assets/img/pfp/2.png"
+              class="overlay-thumb"
+              alt="Goggles"
+              data-type="goggles"
+            />
+            <img
+              src="assets/img/pfp/3.png"
+              class="overlay-thumb"
+              alt="Goggles"
+              data-type="goggles"
+            />
+            <img
+              src="assets/img/pfp/4.png"
+              class="overlay-thumb"
+              alt="Goggles"
+              data-type="goggles"
+            />
+            <!-- Add more overlays as needed -->
+          </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <div class="hypno-border canvas">
-                    <div class="canvas-containe">
-                        <canvas id="imageCanvas" width="800" height="600"></canvas>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                    <div class="col-4">
-                        <button id="again" class="canvas-btn">
-                            <svg class="svg-wh" clip-rule="evenodd" fill-rule="evenodd" fill="#FBFAD8" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m22 6.002c0-.552-.448-1-1-1h-12.628c-.437 0-.853.191-1.138.523-1.078 1.256-3.811 4.439-4.993 5.816-.16.187-.241.418-.241.65s.08.464.24.651c1.181 1.38 3.915 4.575 4.994 5.836.285.333.701.524 1.14.524h12.626c.552 0 1-.447 1-1 0-2.577 0-9.423 0-12zm-7.991 4.928 1.71-1.711c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .194-.073.385-.219.532l-1.711 1.71 1.728 1.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.531-.219l-1.728-1.728-1.728 1.728c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l1.728-1.728-1.788-1.787c-.146-.147-.219-.338-.219-.531 0-.426.346-.75.751-.75.192 0 .384.073.53.219z" fill-rule="nonzero"></path></svg>
-                             Do it Again</button>
-                    </div>
-                    <div class="col-4 px-0">
-                        <button id="saveImage" class="canvas-btn">
-                            <svg class="svg-wh" xmlns="http://www.w3.org/2000/svg" fill="#FBFAD8" viewbox="0 0 28 28"><path d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h-2v4h22v-4h-2z"></path></svg>
-                             Save Image</button>
-                    </div>
-                    <div class="col-4">
-                        <button id="copyImage" class="canvas-btn"> 
-                            <svg class="svg-wh" clip-rule="evenodd" fill-rule="evenodd" fill="#FBFAD8" stroke-linejoin="round" stroke-miterlimit="2" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m6 18v3c0 .621.52 1 1 1h14c.478 0 1-.379 1-1v-14c0-.478-.379-1-1-1h-3v-3c0-.478-.379-1-1-1h-14c-.62 0-1 .519-1 1v14c0 .621.52 1 1 1zm10.5-12h-9.5c-.62 0-1 .519-1 1v9.5h-2.5v-13h13z" fill-rule="nonzero"></path></svg> 
-                             <span id="copyImageClip">Copy to Clipboard</span></button>
-                    </div>
-                </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="hypno-border canvas">
+            <div class="canvas-containe">
+              <canvas id="imageCanvas" width="800" height="600"></canvas>
             </div>
+          </div>
+          <div class="row justify-content-center mt-4">
+            <div class="col-4">
+              <button id="again" class="canvas-btn">
+                <svg
+                  class="svg-wh"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  fill="#FBFAD8"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="2"
+                  viewbox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m22 6.002c0-.552-.448-1-1-1h-12.628c-.437 0-.853.191-1.138.523-1.078 1.256-3.811 4.439-4.993 5.816-.16.187-.241.418-.241.65s.08.464.24.651c1.181 1.38 3.915 4.575 4.994 5.836.285.333.701.524 1.14.524h12.626c.552 0 1-.447 1-1 0-2.577 0-9.423 0-12zm-7.991 4.928 1.71-1.711c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .194-.073.385-.219.532l-1.711 1.71 1.728 1.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.531-.219l-1.728-1.728-1.728 1.728c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l1.728-1.728-1.788-1.787c-.146-.147-.219-.338-.219-.531 0-.426.346-.75.751-.75.192 0 .384.073.53.219z"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                Do it Again
+              </button>
+            </div>
+            <div class="col-4 px-0">
+              <button id="saveImage" class="canvas-btn">
+                <svg
+                  class="svg-wh"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#FBFAD8"
+                  viewbox="0 0 28 28"
+                >
+                  <path
+                    d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h-2v4h22v-4h-2z"
+                  ></path>
+                </svg>
+                Save Image
+              </button>
+            </div>
+            <div class="col-4">
+              <button id="copyImage" class="canvas-btn">
+                <svg
+                  class="svg-wh"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  fill="#FBFAD8"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="2"
+                  viewbox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 18v3c0 .621.52 1 1 1h14c.478 0 1-.379 1-1v-14c0-.478-.379-1-1-1h-3v-3c0-.478-.379-1-1-1h-14c-.62 0-1 .519-1 1v14c0 .621.52 1 1 1zm10.5-12h-9.5c-.62 0-1 .519-1 1v9.5h-2.5v-13h13z"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                <span id="copyImageClip">Copy to Clipboard</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-  
+
     <script src="ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
-    <script src="npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/image-creator.js"></script>
-</body>
+  </body>
 </html>
