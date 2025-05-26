@@ -624,58 +624,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 wallet: wallet
             };
     
-            // Create a new XMLHttpRequest
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', '/confess', true);
-            xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-    
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        // Success: Show success message and hide the form
-                        confessionSucc.classList.remove('d-none');
-                        confessionForm.classList.add('d-none');
-    
-                        // Optionally, clear the input fields
-                        document.getElementById('confessionInput').value = '';
-                        document.getElementById('walletAddyInput').value = '';
-    
-                        // Remove 'error' class in case it was previously added
-                        if (fessionsContainer) {
-                            fessionsContainer.classList.remove('error');
-                        }
-                        if (fessionsTextarea) {
-                            fessionsTextarea.classList.remove('error');
-                        }
-                    } else {
-                        // Error handling: Parse and display error message
-                        let response;
-                        try {
-                            response = JSON.parse(xhr.responseText);
-                        } catch (e) {
-                            response = { message: 'An error occurred. Please try again.' };
-                        }
-    
-                        // Show the confessFormWarning with the error message
-                        if (confessFormWarning) {
-                            confessFormWarning.textContent = response.message || 'An error occurred. Please try again.';
-                            confessFormWarning.classList.remove('d-none');
-                        } else {
-                            alert(response.message || 'An error occurred. Please try again.');
-                        }
-    
-                        // Add 'error' class to the relevant elements
-                        if (fessionsContainer) {
-                            fessionsContainer.classList.add('error');
-                        }
-                        if (fessionsTextarea) {
-                            fessionsTextarea.classList.add('error');
-                        }
-                    }
-                }
-            };
-    
-            xhr.send(JSON.stringify(data));
+              // Success: Show success message and hide the form
+              confessionSucc.classList.remove('d-none');
+              confessionForm.classList.add('d-none');
+
+              // Optionally, clear the input fields
+              document.getElementById('confessionInput').value = '';
+              document.getElementById('walletAddyInput').value = '';
+
+              // Remove 'error' class in case it was previously added
+              if (fessionsContainer) {
+                  fessionsContainer.classList.remove('error');
+              }
+              if (fessionsTextarea) {
+                  fessionsTextarea.classList.remove('error');
+              }
         });
     }
 
