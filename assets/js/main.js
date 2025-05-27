@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     copyCaButtons.forEach(button => {
         button.addEventListener("click", function() {
             // Retrieve the text to copy from the 'data-ca' attribute
-            const CA = "UEPp8H46WkPiBmi7nw35nyfFDNpxp9LWRPxSMHXpump"
+            const CA = "GoN2Nz4Rb1G9kyQLjUvRGbtUhRTpPJ38V2ua5GLRpump"
             
             // Use the Clipboard API to copy the text
             navigator.clipboard.writeText(CA).then(() => {
